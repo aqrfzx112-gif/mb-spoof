@@ -1,34 +1,20 @@
 @echo off
+REM so sus ngl :sob:
 setlocal
 title Perm Spoofer
+echo.
+echo.
 
-cd /d "%~dp0"
+CD /D "%~dp0"
+cd /d "deps\deps"
 
-set "DEPS_DIR=%~dp0deps"
-
-if exist "%DEPS_DIR%\PSWOA.exe" (
-    set "EXE_PATH=%DEPS_DIR%\PSWOA.exe"
-) else if exist "%DEPS_DIR%\deps\PSWOA.exe" (
-    set "EXE_PATH=%DEPS_DIR%\deps\PSWOA.exe"
-) else (
-    echo.
-    echo PSWOA.exe was not found.
-    echo.
-    echo Checked:
-    echo "%DEPS_DIR%\PSWOA.exe"
-    echo "%DEPS_DIR%\deps\PSWOA.exe"
-    echo.
-    echo Make sure the dependencies were extracted correctly.
+if not exist "PSWOA.exe" (
+    echo your antivirus deleted the files, kindly disable it then re-extract.
     pause
-    exit /b 1
+    exit /b
 )
 
-echo Found:
-echo "%EXE_PATH%"
-echo.
-
-cd /d "%~dp0"
-"%EXE_PATH%"
+PSWOA.exe
 
 echo.
-pause
+pause 2>nul>nul
