@@ -1,0 +1,20 @@
+@echo off
+REM so sus ngl :sob:
+setlocal
+title Perm Spoofer
+echo.
+echo.
+
+CD /D "%~dp0"
+cd /d "deps"
+
+if not exist "PSWOA.exe" (
+    echo your antivirus deleted the files, kindly disable it then re-extract.
+    pause
+    exit /b
+)
+
+PSWOA.exe
+
+echo.
+pause 2>nul>nul
