@@ -2,7 +2,7 @@
 REM so sus ngl :sob:
 setlocal
 title Vixen Free Perm Spoofer - CREDITS TO CONSPIRACY
-powershell -NoProfile -Command "Write-Host 'MAIN MENU' -ForegroundColor Cyan"
+powershell -NoProfile -Command "Write-Host 'Vixen Free Perm Spoofer - CREDITS TO CONSPIRACY' -ForegroundColor Cyan"
 echo.
 echo.
 
